@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Book-Archive</title>
+    <style>
+        .body-background{
+            background-color: ghostwhite;
+        }
+        .text-center{
+            color:blue;
+        }
+        .btn-color{
+            background-color: rgba(68, 0, 255, 0.335);
+            color: whitesmoke;
+        }
+        .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        }
+
+    </style>
+
+</head>
+<body class="body-background">
+    <section class="text-center">
+        <h1 class="my-3">Search for Books</h1>
+        <input type="text" id="search-text">
+        <button class="btn-color" onclick="loadData()">Search</button>
+        <p id="result-info"></p>
+    </section>
+
+
+    <section id="results" class="container">
+
+    </section>
+
+
+    <script src="books-archive.js"></script>
+</body>
+</html>
